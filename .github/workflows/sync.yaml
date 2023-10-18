@@ -10,8 +10,7 @@ jobs:
       - name: Sync highlights
         uses: addnab/docker-run-action@v3
         with:
-          registry: gcr.io
-          image: arkalim/kindle-to-notion:master
+          image: ghcr.io/arkalim/kindle-to-notion:master
           run: node /code/dist/main.js
           options: |
             -v ${{ github.workspace }}:/code/resources 
